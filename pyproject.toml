@@ -1,0 +1,22 @@
+[project]
+name = "nydus-sc1-wine"
+version = "0.1.0"
+description = "StarCraft 1.16.1 + cnc-ddraw + BWAPI installer. uses python stdlib + wine + bubblewrap"
+requires-python = ">=3.12"
+
+[tool.basedpyright]
+typeCheckingMode = "strict"
+reportMissingImports = true
+reportUnusedCallResult = false
+exclude = ["prefix", "rootfs", "downloads", "discs", "dist"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = ["prefix", "rootfs", "downloads", "discs", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RET", "PTH", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sc_installer"]

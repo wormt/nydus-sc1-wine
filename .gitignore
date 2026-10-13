@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+prefix/
+rootfs/
+downloads/
+discs/
+launch.sh
